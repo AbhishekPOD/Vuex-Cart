@@ -31,7 +31,7 @@ const store = new Vuex.Store({
         fetch_products : function (context) {
             // context.commit("kwabjkwba", iwqgfujgqw)
 
-            fetch("http://127.0.0.1:8000/data.json").then(response => response.json()
+            fetch("data.json").then(response => response.json()
             ).then(data => {
                 console.log(data);
                 context.commit("update_products", data)
